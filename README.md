@@ -1,8 +1,8 @@
 # 🏥 Triagem Inteligente
 
-Sistema de apoio à triagem hospitalar desenvolvido como Projeto Integrador do curso de Ciência da Computação.
+Sistema inteligente de apoio à triagem hospitalar desenvolvido como Projeto Integrador do curso de Ciência da Computação.
 
-O objetivo do projeto é auxiliar a organização do atendimento em unidades de saúde por meio da classificação de pacientes conforme os sintomas informados, contribuindo para a priorização de casos mais urgentes e melhor gerenciamento da fila de atendimento.
+O sistema auxilia profissionais de saúde na classificação inicial de pacientes por meio de Inteligência Artificial, organizando automaticamente a fila de atendimento conforme a prioridade clínica identificada.
 
 ---
 
@@ -23,6 +23,7 @@ O projeto Triagem Inteligente foi desenvolvido para apoiar o processo de triagem
 * Permitir acompanhamento do tempo de espera.
 * Gerenciar status e observações dos pacientes.
 * Utilizar Inteligência Artificial como ferramenta de apoio à classificação.
+* Disponibilizar pré-triagem remota por meio de chatbot.
 
 ---
 
@@ -35,7 +36,7 @@ O projeto Triagem Inteligente foi desenvolvido para apoiar o processo de triagem
 * Telefone
 * Sintomas
 
-### Classificação de Risco
+### Classificação Inteligente
 
 * Vermelho (Emergência)
 * Amarelo (Urgência)
@@ -43,38 +44,62 @@ O projeto Triagem Inteligente foi desenvolvido para apoiar o processo de triagem
 
 ### Gestão da Fila
 
-* Ordenação por prioridade
-* Controle de tempo de espera
-* Atualização de status
+* Ordenação automática por prioridade.
+* Controle de tempo de espera.
+* Atualização de status do atendimento.
+* Busca de pacientes.
+
+### Histórico
+
+* Registro dos atendimentos realizados.
+* Consulta de pacientes finalizados.
 
 ### Detalhes do Paciente
 
-* Dados completos
-* Sintomas informados
-* Encaminhamento
-* Observações
+* Dados completos.
+* Sintomas informados.
+* Encaminhamento sugerido.
+* Observações da equipe.
 
 ### Inteligência Artificial
 
-* Integração com modelo local via Ollama.
-* Classificação baseada nos sintomas informados.
-* Estrutura preparada para evolução utilizando técnicas de IA generativa e RAG (Retrieval-Augmented Generation).
+* Modelo local executado via Ollama.
+* Classificação utilizando Mistral.
+* Busca semântica com ChromaDB.
+* Arquitetura RAG (Retrieval-Augmented Generation).
+* Base de conhecimento clínica personalizada.
+
+### Bot Telegram
+
+* Pré-triagem remota.
+* Coleta de dados do paciente.
+* Envio automático para o sistema.
+* Geração de protocolo de atendimento.
 
 ---
 
 ## 🏗️ Arquitetura do Projeto
 
 ```text
-Frontend (React + Vite)
-          │
-          ▼
-Backend (FastAPI)
-          │
-          ▼
-PostgreSQL
-          │
-          ▼
-Módulo de IA (Ollama)
+Paciente
+   ├── Site (React)
+   └── Telegram Bot
+
+            ↓
+
+         FastAPI
+
+            ↓
+
+     ChromaDB + Mistral
+
+            ↓
+
+       PostgreSQL
+
+            ↓
+
+      Fila Hospitalar
 ```
 
 ---
@@ -103,6 +128,12 @@ Módulo de IA (Ollama)
 
 * Ollama
 * Mistral
+* ChromaDB
+* RAG (Retrieval-Augmented Generation)
+
+### Integrações
+
+* Telegram Bot API
 
 ### Ferramentas
 
@@ -116,24 +147,44 @@ Módulo de IA (Ollama)
 ## 📂 Estrutura do Projeto
 
 ```text
+```text
 triagem-inteligente/
 
 ├── ai/
+│   ├── telegram_bot/
+│   │   ├── bot.py
+│   │   └── .env.example
+│   │
+│   ├── tests/
+│   │   ├── test_rag.py
+│   │   ├── teste_classificador.py
+│   │   ├── teste_dataset.py
+│   │   └── teste_ia.py
+│   │
 │   ├── classificador.py
-│   └── testes
+│   ├── knowledge_base.py
+│   ├── rag_classifier.py
+│   └── semantic_search.py
 │
 ├── backend/
 │   ├── main.py
 │   ├── models.py
 │   ├── database.py
-│   └── requirements.txt
+│   ├── requirements.txt
+│   └── .env.example
+│
+├── dataset/
+│   └── casos_triagem.json
 │
 ├── frontend/
-│   ├── src/
 │   ├── public/
+│   ├── src/
 │   └── package.json
 │
-└── README.md
+├── README.md
+└── LICENSE
+```
+
 ```
 
 ---
@@ -145,6 +196,8 @@ triagem-inteligente/
 ```bash
 git clone https://github.com/rafael-vincensi/triagem-inteligente.git
 ```
+
+---
 
 ### 2. Backend
 
@@ -162,11 +215,13 @@ Servidor:
 http://127.0.0.1:8000
 ```
 
-Documentação da API:
+Documentação:
 
 ```text
 http://127.0.0.1:8000/docs
 ```
+
+---
 
 ### 3. Frontend
 
@@ -184,6 +239,8 @@ Aplicação:
 http://localhost:5173
 ```
 
+---
+
 ### 4. Inteligência Artificial
 
 Instalar Ollama:
@@ -198,17 +255,55 @@ Executar modelo:
 ollama run mistral
 ```
 
+Criar base vetorial:
+
+```bash
+cd ai
+
+python knowledge_base.py
+```
+
+---
+
+### 5. Bot Telegram
+
+Configurar o token no arquivo `.env`:
+
+```env
+BOT_TOKEN=SEU_TOKEN
+```
+
+Executar:
+
+```bash
+cd ai/telegram_bot
+
+python bot.py
+```
+
+---
+
+## 🔄 Fluxo de Funcionamento
+
+1. O paciente informa seus dados e sintomas.
+2. Os sintomas são enviados ao backend.
+3. O ChromaDB busca casos semelhantes na base de conhecimento.
+4. O modelo Mistral realiza a classificação.
+5. O sistema define prioridade e encaminhamento.
+6. O paciente é inserido automaticamente na fila.
+7. A equipe acompanha o atendimento pelo painel web.
+
 ---
 
 ## 🔮 Melhorias Futuras
 
-* Dashboard hospitalar em tempo real.
-* Integração com WhatsApp.
-* Histórico completo de atendimentos.
-* Utilização de BioBERT para embeddings clínicos.
-* Implementação de ChromaDB.
-* Arquitetura RAG para apoio à decisão clínica.
-* Relatórios e indicadores hospitalares.
+* Dashboard com indicadores hospitalares em tempo real.
+* Controle de usuários e permissões.
+* Histórico de alterações clínicas.
+* Integração com WhatsApp Business.
+* Utilização de BioBERT para embeddings clínicos especializados.
+* Relatórios gerenciais e estatísticos.
+* Implantação em ambiente cloud.
 
 ---
 
@@ -216,6 +311,5 @@ ollama run mistral
 
 Projeto desenvolvido para a disciplina de Projeto Integrador do curso de Ciência da Computação.
 
-Marcos Felipe Schmid e
-Rafael Vincensi de Miranda
-
+**Marcos Felipe Schmid**
+**Rafael Vincensi de Miranda**
