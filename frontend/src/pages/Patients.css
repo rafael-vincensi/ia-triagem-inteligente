@@ -1,0 +1,197 @@
+.patients-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:24px;
+}
+
+.patients-header h1{
+    font-size:42px;
+    color:#173B70;
+    margin-bottom:6px;
+}
+
+.patients-header p{
+    color:#64748B;
+    font-size:15px;
+}
+
+.btn-novo{
+    background:#173B70;
+    color:#FFF;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    padding:14px 28px;
+    border-radius:16px;
+    font-size:18px;
+    font-weight:600;
+    transition:.2s;
+}
+
+.btn-novo:hover{
+    background:#204B8C;
+}
+
+.patients-filters{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:16px;
+    margin-bottom:22px;
+}
+
+.patients-filters input,
+.patients-filters select{
+    padding:12px 14px;
+    border:1px solid #D1D5DB;
+    border-radius:12px;
+    font-size:14px;
+    outline:none;
+    transition:.2s;
+}
+
+.patients-filters input:focus,
+.patients-filters select:focus{
+    border-color:#173B70;
+}
+
+.patients-table{
+    background:#FFF;
+    border-radius:18px;
+    padding:22px;
+    border:1px solid #EEF2F7;
+    box-shadow:0 8px 20px rgba(15,23,42,.05);
+}
+
+.patients-total{
+    margin-bottom:18px;
+    color:#64748B;
+    font-size:14px;
+}
+
+.patients-table table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.patients-table th{
+    text-align:left;
+    padding:14px;
+    color:#64748B;
+    border-bottom:1px solid #E5E7EB;
+    font-size:14px;
+}
+
+.patients-table td{
+    padding:14px;
+    border-bottom:1px solid #F1F5F9;
+}
+
+.patients-table tbody tr{
+    transition:.2s;
+}
+
+.patients-table tbody tr:hover{
+    background:#F8FAFC;
+}
+.badge{
+    display:inline-block;
+    padding:6px 14px;
+    border-radius:999px;
+    font-size:13px;
+    font-weight:600;
+    text-transform:capitalize;
+}
+
+.badge.vermelho{
+    background:#FEE2E2;
+    color:#B91C1C;
+}
+
+.badge.laranja{
+    background:#FFEDD5;
+    color:#C2410C;
+}
+
+.badge.amarelo{
+    background:#FEF3C7;
+    color:#B45309;
+}
+
+.badge.verde{
+    background:#DCFCE7;
+    color:#15803D;
+}
+
+.badge.azul{
+    background:#DBEAFE;
+    color:#2563EB;
+}
+
+.status{
+    display:inline-block;
+    padding:6px 12px;
+    border-radius:999px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.status.aguardando{
+    background:#FEF3C7;
+    color:#B45309;
+}
+
+.status.em-atendimento{
+    background:#DBEAFE;
+    color:#2563EB;
+}
+
+.status.finalizado{
+    background:#DCFCE7;
+    color:#15803D;
+}
+
+.btn-detalhes{
+    display:inline-block;
+    padding:8px 14px;
+    background:#173B70;
+    color:#FFF;
+    text-decoration:none;
+    border-radius:10px;
+    font-size:13px;
+    font-weight:600;
+    transition:.2s;
+}
+
+.btn-detalhes:hover{
+    background:#1E4C8F;
+    transform:translateY(-2px);
+}
+
+@media(max-width:1000px){
+    .patients-filters{
+        grid-template-columns:1fr;
+    }
+
+    .patients-table{
+        overflow-x:auto;
+    }
+
+    .patients-table table{
+        min-width:850px;
+    }
+}
+
+@media(max-width:768px){
+    .patients-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:18px;
+    }
+
+    .patients-header h1{
+        font-size:34px;
+    }
+
+}
+

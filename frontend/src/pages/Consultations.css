@@ -1,0 +1,106 @@
+.consultations-header{
+    margin-bottom:30px;
+}
+
+.consultations-header h1{
+    font-size:34px;
+    color:#173B70;
+    margin-bottom:6px;
+}
+
+.consultations-header p{
+    color:#64748B;
+    font-size:16px;
+}
+
+.consultations-table{
+    background:#FFF;
+    border-radius:18px;
+    padding:24px;
+    border:1px solid #EEF2F7;
+    box-shadow:0 8px 20px rgba(15,23,42,.05);
+}
+
+.consultations-table table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.consultations-table th{
+    text-align:left;
+    padding:16px;
+    color:#64748B;
+    border-bottom:1px solid #E5E7EB;
+    font-size:14px;
+}
+
+.consultations-table td{
+    padding:16px;
+    border-bottom:1px solid #F1F5F9;
+    vertical-align:middle;
+}
+
+.consultations-table tr:hover{
+    background:#F8FAFC;
+}
+
+.badge{
+    display:inline-block;
+    padding:6px 14px;
+    border-radius:999px;
+    font-size:13px;
+    font-weight:600;
+    text-transform:capitalize;
+}
+
+.badge.vermelho{
+    background:#FEE2E2;
+    color:#B91C1C;
+}
+
+.badge.laranja{
+    background:#FFEDD5;
+    color:#EA580C;
+}
+
+.badge.amarelo{
+    background:#FEF9C3;
+    color:#CA8A04;
+}
+
+.badge.verde{
+    background:#DCFCE7;
+    color:#15803D;
+}
+
+.badge.azul{
+    background:#DBEAFE;
+    color:#2563EB;
+}
+
+.btn-detalhes{
+    display:inline-block;
+    padding:8px 16px;
+    background:#173B70;
+    color:#FFF;
+    border-radius:10px;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:600;
+    transition:.2s;
+}
+
+.btn-detalhes:hover{
+    background:#204B8C;
+}
+
+@media(max-width:900px){
+    .consultations-table{
+        overflow-x:auto;
+    }
+
+    .consultations-table table{
+        min-width:750px;
+    }
+
+}

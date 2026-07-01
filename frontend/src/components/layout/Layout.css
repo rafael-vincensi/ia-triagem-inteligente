@@ -1,0 +1,118 @@
+.layout{
+    display:flex;
+    min-height:100vh;
+    background:#F4F7FB;
+}
+
+.layout-content{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    margin-left:230px;
+}
+
+.page-content{
+    flex:1;
+    padding:30px;
+    overflow-y:auto;
+}
+
+.sidebar{
+    width:230px;
+    height:100vh;
+    position:fixed;
+    left:0;
+    top:0;
+    background:#173B70;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    padding:28px 20px;
+}
+
+.sidebar-logo{
+    margin-bottom:45px;
+}
+
+.sidebar-logo h2{
+    font-size:22px;
+    margin-bottom:4px;
+    color:white;
+}
+
+.sidebar-logo span{
+    font-size:14px;
+    color:rgba(255,255,255,.75);
+}
+
+.sidebar-menu{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.sidebar-menu a{
+    color:white;
+    text-decoration:none;
+    padding:14px 16px;
+    border-radius:12px;
+    transition:.2s;
+    font-size:15px;
+    font-weight:500;
+}
+
+.sidebar-menu a:hover{
+    background:rgba(255,255,255,.10);
+}
+
+.sidebar-menu a.active{
+    background:white;
+    color:#173B70;
+    font-weight:600;
+}
+
+.header{
+    height:75px;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 35px;
+    border-bottom:1px solid #E5E7EB;
+}
+
+.header h2{
+    font-size:24px;
+    color:#173B70;
+}
+
+.header-user{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.header-user strong{
+    display:block;
+    color:#111827;
+    font-size:15px;
+}
+
+.header-user p{
+    font-size:13px;
+    color:#6B7280;
+}
+
+.logout-button{
+    border:none;
+    background:#173B70;
+    color:white;
+    padding:10px 18px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.logout-button:hover{
+    background:#2458B8;
+}

@@ -18,7 +18,7 @@ def buscar_contexto(sintomas):
 
     resultado = colecao.query(
         query_texts=[sintomas],
-        n_results=5
+        n_results=2
     )
 
     contexto = ""

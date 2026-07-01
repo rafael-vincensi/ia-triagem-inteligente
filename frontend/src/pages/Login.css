@@ -1,0 +1,136 @@
+@import "../styles/variables.css";
+
+.login-page{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+    background:
+        radial-gradient(circle at top left, rgba(37,99,235,.08) 0%, transparent 40%),
+        radial-gradient(circle at bottom right, rgba(37,99,235,.06) 0%, transparent 35%),
+        #F8FAFC;
+}
+
+.login-card{
+    width:420px;
+    max-width:95%;
+    background:#FFFFFF;
+    padding:45px;
+    border-radius:24px;
+    box-shadow:0 20px 60px rgba(15,23,42,.10);
+}
+
+.login-card h1{
+    font-size:24px;
+    font-weight:700;
+    color:#173B70;
+    text-align:center;
+    margin-bottom:8px;
+}
+
+.login-card p{
+    text-align:center;
+    color:#6B7280;
+    font-size:15px;
+    line-height:1.5;
+    margin-bottom:40px;
+}
+
+.input-group{
+    margin-bottom:22px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:8px;
+    font-size:14px;
+    font-weight:600;
+    color:#374151;
+}
+
+.input-group input{
+    width:100%;
+    height:56px;
+    padding:0 18px;
+    border:1px solid #D6DCE5;
+    border-radius:16px;
+    background:#FFFFFF;
+    color:#1F2937;
+    font-size:15px;
+    transition:all .25s ease;
+    appearance:none;
+    -webkit-appearance:none;
+    color-scheme:light;
+}
+
+.input-group input::placeholder{
+    color:#9CA3AF;
+    font-size:14px;
+}
+
+.input-group input:focus{
+    outline:none;
+    border-color:#2563EB;
+    box-shadow:0 0 0 6px rgba(37,99,235,.12);
+}
+
+.password-input{
+    position:relative;
+}
+
+.password-input input{
+    padding-right:55px;
+}
+
+.toggle-password{
+    position:absolute;
+    right:18px;
+    top:50%;
+    transform:translateY(-50%);
+    border:none;
+    background:none;
+    cursor:pointer;
+    color:#9CA3AF;
+    font-size:18px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:.2s;
+}
+
+.toggle-password:hover{
+    color:#2563EB;
+}
+
+.login-button{
+    width:100%;
+    height:56px;
+    margin-top:18px;
+    border:none;
+    border-radius:16px;
+    background:#173B70;
+    color:#FFF;
+    font-size:15px;
+    font-weight:700;
+    cursor:pointer;
+    transition:background-color .15s ease;
+}
+
+.login-button:hover{
+    background:#2458B8;
+}
+
+.login-button:active{
+    background:#163765;
+}
+
+.erro{
+    display:block;
+    margin-top:5px;
+    margin-bottom:10px;
+    color:#DC2626;
+    font-size:14px;
+    text-align:left;
+}

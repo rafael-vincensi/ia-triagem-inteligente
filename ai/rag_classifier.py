@@ -9,7 +9,6 @@ colecao = cliente.get_collection(
     name="triagem"
 )
 
-
 def classificar(sintomas):
 
     resultado = colecao.query(
@@ -69,7 +68,6 @@ ENCAMINHAMENTO:
     )
 
     return resposta["message"]["content"]
-
 
 print(
     classificar(
