@@ -2,6 +2,13 @@
 
 Sistema inteligente de apoio à triagem hospitalar desenvolvido como Projeto Integrador do curso de Ciência da Computação.
 
+![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-000000)
+![Mistral](https://img.shields.io/badge/Mistral-AI-orange)
+
 O sistema auxilia profissionais de saúde na classificação inicial de pacientes por meio de Inteligência Artificial, organizando automaticamente a fila de atendimento conforme a prioridade clínica identificada.
 
 ---
@@ -77,6 +84,38 @@ O projeto Triagem Inteligente foi desenvolvido para apoiar o processo de triagem
 * Geração de protocolo de atendimento.
 
 ---
+## 📷 Demonstração
+
+### Login
+
+![Login](assets/screenshots/login.png)
+
+### Dashboard
+
+![Dashboard](assets/screenshots/dashboard.png)
+
+### Pacientes no momento
+
+![Pacientes](assets/screenshots/pacientes.png)
+
+### Nova triagem
+
+![Cadastro](assets/screenshots/nova-triagem.png)
+
+### Histórico de Pacientes
+
+![Historico](assets/screenshots/historico.png)
+
+### Detalhes do Paciente
+
+![Info](assets/screenshots/paciente-info.png)
+
+### Chatbot
+
+![Bot](assets/screenshots/bot-1.png)
+![Bot](assets/screenshots/bot-2.png)
+
+---
 
 ## 🏗️ Arquitetura do Projeto
 
@@ -146,7 +185,6 @@ Paciente
 
 ## 📂 Estrutura do Projeto
 
-```text
 ```text
 triagem-inteligente/
 
