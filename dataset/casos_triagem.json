@@ -1,380 +1,380 @@
 [
   {
     "sintomas": "dor forte no peito, suor frio e falta de ar",
-    "classificacao": "vermelho",
+    "classificacao": "Vermelho",
     "prioridade": 1,
     "encaminhamento": "Emergência"
   },
   {
     "sintomas": "desmaio e inconsciência",
-    "classificacao": "vermelho",
+    "classificacao": "Vermelho",
     "prioridade": 1,
     "encaminhamento": "Emergência"
   },
   {
     "sintomas": "parada cardiorrespiratória",
-    "classificacao": "vermelho",
+    "classificacao": "Vermelho",
     "prioridade": 1,
     "encaminhamento": "Emergência"
   },
   {
     "sintomas": "choque anafilático, edema de glote e hipotensão",
-    "classificacao": "vermelho",
+    "classificacao": "Vermelho",
     "prioridade": 1,
     "encaminhamento": "Emergência"
   },
   {
     "sintomas": "ferimento por arma de fogo abdominal com choque",
-    "classificacao": "vermelho",
+    "classificacao": "Vermelho",
     "prioridade": 1,
     "encaminhamento": "Emergência"
   },
   {
     "sintomas": "queimaduras extensas em face e pescoço",
-    "classificacao": "vermelho",
+    "classificacao": "Vermelho",
     "prioridade": 1,
     "encaminhamento": "Emergência"
   },
   {
     "sintomas": "traumatismo craniano grave com glasgow 7",
-    "classificacao": "vermelho",
+    "classificacao": "Vermelho",
     "prioridade": 1,
     "encaminhamento": "Emergência"
   },
   {
     "sintomas": "desconforto respiratório grave e cianose",
-    "classificacao": "vermelho",
+    "classificacao": "Vermelho",
     "prioridade": 1,
     "encaminhamento": "Emergência"
   },
   {
     "sintomas": "afogamento com apneia",
-    "classificacao": "vermelho",
+    "classificacao": "Vermelho",
     "prioridade": 1,
     "encaminhamento": "Emergência"
   },
   {
     "sintomas": "sepse grave com hipotensão",
-    "classificacao": "vermelho",
+    "classificacao": "Vermelho",
     "prioridade": 1,
     "encaminhamento": "Emergência"
   },
 
   {
     "sintomas": "dor abdominal moderada e náuseas",
-    "classificacao": "amarelo",
+    "classificacao": "Amarelo",
     "prioridade": 3,
     "encaminhamento": "Urgência"
   },
   {
     "sintomas": "febre persistente e vômitos",
-    "classificacao": "amarelo",
+    "classificacao": "Amarelo",
     "prioridade": 3,
     "encaminhamento": "Urgência"
   },
   {
     "sintomas": "retenção urinária aguda e dor em baixo ventre",
-    "classificacao": "laranja",
+    "classificacao": "Laranja",
     "prioridade": 2,
     "encaminhamento": "Sala de Urgência"
   },
   {
     "sintomas": "dor lombar intensa após esforço físico",
-    "classificacao": "amarelo",
+    "classificacao": "Amarelo",
     "prioridade": 3,
     "encaminhamento": "Urgência"
   },
   {
     "sintomas": "crise de ansiedade com hiperventilação",
-    "classificacao": "amarelo",
+    "classificacao": "Amarelo",
     "prioridade": 3,
     "encaminhamento": "Urgência"
   },
   {
     "sintomas": "febre alta persistente em criança",
-    "classificacao": "amarelo",
+    "classificacao": "Amarelo",
     "prioridade": 3,
     "encaminhamento": "Urgência"
   },
   {
     "sintomas": "dor de dente intensa com edema facial",
-    "classificacao": "amarelo",
+    "classificacao": "Amarelo",
     "prioridade": 3,
     "encaminhamento": "Urgência"
   },
   {
     "sintomas": "pressão arterial 190 por 110",
-    "classificacao": "laranja",
+    "classificacao": "Laranja",
     "prioridade": 2,
     "encaminhamento": "Sala de Urgência"
   },
   {
     "sintomas": "dor e edema unilateral em panturrilha",
-    "classificacao": "amarelo",
+    "classificacao": "Amarelo",
     "prioridade": 3,
     "encaminhamento": "Urgência"
   },
   {
     "sintomas": "queimadura de segundo grau em braço",
-    "classificacao": "amarelo",
+    "classificacao": "Amarelo",
     "prioridade": 3,
     "encaminhamento": "Urgência"
   },
   {
     "sintomas": "tosse produtiva, febre e saturação 94",
-    "classificacao": "amarelo",
+    "classificacao": "Amarelo",
     "prioridade": 3,
     "encaminhamento": "Urgência"
   },
   {
     "sintomas": "febre em paciente oncológico em quimioterapia",
-    "classificacao": "laranja",
+    "classificacao": "Laranja",
     "prioridade": 2,
     "encaminhamento": "Sala de Urgência"
   },
   {
     "sintomas": "dor ocular intensa e visão turva",
-    "classificacao": "laranja",
+    "classificacao": "Laranja",
     "prioridade": 2,
     "encaminhamento": "Sala de Urgência"
   },
   {
     "sintomas": "fratura de quadril após queda",
-    "classificacao": "laranja",
+    "classificacao": "Laranja",
     "prioridade": 2,
     "encaminhamento": "Sala de Urgência"
   },
   {
     "sintomas": "asma com chiado e saturação 93",
-    "classificacao": "laranja",
+    "classificacao": "Laranja",
     "prioridade": 2,
     "encaminhamento": "Sala de Urgência"
   },
   {
   "sintomas": "dor intensa no ouvido com febre",
-  "classificacao": "amarelo",
+  "classificacao": "Amarelo",
   "prioridade": 3,
   "encaminhamento": "Urgência"
 },
 {
   "sintomas": "otalgia intensa com secreção no ouvido",
-  "classificacao": "amarelo",
+  "classificacao": "Amarelo",
   "prioridade": 3,
   "encaminhamento": "Urgência"
 },
 {
   "sintomas": "dor abdominal forte sem sinais de choque",
-  "classificacao": "amarelo",
+  "classificacao": "Amarelo",
   "prioridade": 3,
   "encaminhamento": "Urgência"
 },
 {
   "sintomas": "crise asmática moderada sem cianose",
-  "classificacao": "amarelo",
+  "classificacao": "Amarelo",
   "prioridade": 3,
   "encaminhamento": "Urgência"
 },
 {
   "sintomas": "febre alta há três dias",
-  "classificacao": "amarelo",
+  "classificacao": "Amarelo",
   "prioridade": 3,
   "encaminhamento": "Urgência"
 },
 {
     "sintomas": "tosse seca e febre",
-    "classificacao": "verde",
+    "classificacao": "Verde",
     "prioridade": 4,
     "encaminhamento": "Consulta"
   },
   {
     "sintomas": "dor de garganta",
-    "classificacao": "azul",
+    "classificacao": "Azul",
     "prioridade": 5,
     "encaminhamento": "Consulta"
   },
   {
     "sintomas": "resfriado com coriza e espirros",
-    "classificacao": "verde",
+    "classificacao": "Verde",
     "prioridade": 4,
     "encaminhamento": "Consulta"
   },
   {
     "sintomas": "diarreia leve sem febre",
-    "classificacao": "verde",
+    "classificacao": "Verde",
     "prioridade": 4,
     "encaminhamento": "Consulta"
   },
   {
     "sintomas": "conjuntivite leve",
-    "classificacao": "verde",
+    "classificacao": "Verde",
     "prioridade": 4,
     "encaminhamento": "Consulta"
   },
   {
     "sintomas": "dor muscular após atividade física",
-    "classificacao": "verde",
+    "classificacao": "Verde",
     "prioridade": 4,
     "encaminhamento": "Consulta"
   },
   {
     "sintomas": "ardência leve ao urinar",
-    "classificacao": "verde",
+    "classificacao": "Verde",
     "prioridade": 4,
     "encaminhamento": "Consulta"
   },
   {
   "sintomas":"hematoma na perna após batida",
-  "classificacao":"verde",
+  "classificacao":"Verde",
   "prioridade":4,
   "encaminhamento":"Clínica Geral"
 },
 {
     "sintomas": "tosse seca persistente sem febre",
-    "classificacao": "verde",
+    "classificacao": "Verde",
     "prioridade": 4,
     "encaminhamento": "Consulta"
   },
   {
     "sintomas": "cefaleia tensional leve",
-    "classificacao": "verde",
+    "classificacao": "Verde",
     "prioridade": 4,
     "encaminhamento": "Consulta"
   },
   {
     "sintomas": "azia e queimação após refeições",
-    "classificacao": "verde",
+    "classificacao": "Verde",
     "prioridade": 4,
     "encaminhamento": "Consulta"
   },
   {
   "sintomas":"corte superficial na mão sem sangramento intenso",
-  "classificacao":"verde",
+  "classificacao":"Verde",
   "prioridade":4,
   "encaminhamento":"Clínica Geral"
 },
 {
   "sintomas": "dor leve no ouvido com audição preservada",
-  "classificacao": "verde",
+  "classificacao": "Verde",
   "prioridade": 4,
   "encaminhamento": "Consulta"
 },
 {
   "sintomas": "dor no ouvido há dois dias sem febre",
-  "classificacao": "verde",
+  "classificacao": "Verde",
   "prioridade": 4,
   "encaminhamento": "Consulta"
 },
 {
   "sintomas": "coceira no ouvido sem secreção",
-  "classificacao": "azul",
+  "classificacao": "Azul",
   "prioridade": 5,
   "encaminhamento": "Consulta"
 },
 {
   "sintomas": "dor de cabeça leve desde ontem",
-  "classificacao": "verde",
+  "classificacao": "Verde",
   "prioridade": 4,
   "encaminhamento": "Consulta"
 },
 {
   "sintomas":"arranhão superficial no dedo",
-  "classificacao":"verde",
+  "classificacao":"Verde",
   "prioridade":4,
   "encaminhamento":"Clínica Geral"
 },
 {
   "sintomas": "cefaleia leve sem outros sintomas",
-  "classificacao": "verde",
+  "classificacao": "Verde",
   "prioridade": 4,
   "encaminhamento": "Consulta"
 },
 {
   "sintomas": "nariz entupido e espirros",
-  "classificacao": "azul",
+  "classificacao": "Azul",
   "prioridade": 5,
   "encaminhamento": "Consulta"
 },
 {
   "sintomas": "coriza sem febre",
-  "classificacao": "azul",
+  "classificacao": "Azul",
   "prioridade": 5,
   "encaminhamento": "Consulta"
 },
 {
   "sintomas": "dor leve no joelho após caminhada",
-  "classificacao": "verde",
+  "classificacao": "Verde",
   "prioridade": 4,
   "encaminhamento": "Consulta"
 },
 {
   "sintomas": "dor muscular leve após exercício físico",
-  "classificacao": "verde",
+  "classificacao": "Verde",
   "prioridade": 4,
   "encaminhamento": "Consulta"
 },
 {
   "sintomas": "dor leve no ombro após esforço",
-  "classificacao": "verde",
+  "classificacao": "Verde",
   "prioridade": 4,
   "encaminhamento": "Consulta"
 },
 {
   "sintomas": "coceira na garganta sem febre",
-  "classificacao": "azul",
+  "classificacao": "Azul",
   "prioridade": 5,
   "encaminhamento": "Consulta"
 },
 {
   "sintomas": "rouquidão leve",
-  "classificacao": "azul",
+  "classificacao": "Azul",
   "prioridade": 5,
   "encaminhamento": "Consulta"
 },
 {
   "sintomas": "pequena afta na boca",
-  "classificacao": "azul",
+  "classificacao": "Azul",
   "prioridade": 5,
   "encaminhamento": "Consulta"
 },
 {
   "sintomas": "picada de mosquito com leve vermelhidão",
-  "classificacao": "azul",
+  "classificacao": "Azul",
   "prioridade": 5,
   "encaminhamento": "Consulta"
 },
 {
   "sintomas": "pele ressecada com coceira leve",
-  "classificacao": "azul",
+  "classificacao": "Azul",
   "prioridade": 5,
   "encaminhamento": "Consulta"
 },
 {
     "sintomas": "constipação intestinal crônica",
-    "classificacao": "azul",
+    "classificacao": "Azul",
     "prioridade": 5,
     "encaminhamento": "Consulta"
   },
   {
     "sintomas": "aftas dolorosas na boca",
-    "classificacao": "verde",
+    "classificacao": "Verde",
     "prioridade": 4,
     "encaminhamento": "Consulta"
   },
   {
     "sintomas": "dor lombar crônica sem piora recente",
-    "classificacao": "verde",
+    "classificacao": "Verde",
     "prioridade": 4,
     "encaminhamento": "Consulta"
   },
   {
     "sintomas": "queda de cabelo e unhas quebradiças",
-    "classificacao": "azul",
+    "classificacao": "Azul",
     "prioridade": 5,
     "encaminhamento": "Consulta"
   },
   {
     "sintomas": "picada de inseto com coceira leve",
-    "classificacao": "azul",
+    "classificacao": "Azul",
     "prioridade": 5,
     "encaminhamento": "Consulta"
   }
