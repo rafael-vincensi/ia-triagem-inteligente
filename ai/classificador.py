@@ -3,7 +3,10 @@ from ai.semantic_search import buscar_contexto
 
 def classificar_sintomas(sintomas):
 
-    contexto = ""
+    contexto = buscar_contexto(sintomas)
+ 
+    if not contexto.strip():
+        contexto = "Nenhum caso semelhante encontrado."
 
     prompt = f"""
 Você é um enfermeiro especialista em Classificação de Risco utilizando EXCLUSIVAMENTE o Protocolo de Manchester.
