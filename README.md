@@ -185,23 +185,19 @@ triagem-inteligente/
 └── LICENSE
 ```
 
-```
-
----
 
 ## 🚀 Como Executar
 
 ### 1. Clonar o repositório
-
-```bash
-git clone https://github.com/rafael-vincensi/triagem-inteligente.git
 ```
+bash
+git clone https://github.com/rafael-vincensi/triagem-inteligente.git
 
----
-
+```
 ### 2. Backend
 
-```bash
+```
+bash
 cd backend
 
 pip install -r requirements.txt
@@ -307,9 +303,6 @@ python bot.py
 
 ---
 
-## 👨‍💻 Autores
+## 👨‍💻 Autor
 
-Projeto desenvolvido para a disciplina de Projeto Integrador do curso de Ciência da Computação.
-
-**Marcos Felipe Schmid**
 **Rafael Vincensi de Miranda**
